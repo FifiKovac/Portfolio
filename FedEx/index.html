@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital@1&display=swap" rel="stylesheet">
+    <title>FedEx</title>
+</head>
+<body>
+    <section class="logo">
+        <img src="./Fedex-Logo.png" width="300px" alt="">
+    </section>
+
+    <section id="count">
+        <form action="">
+            <label for="25">25x</label>
+            <input onkeyup="Calculate()"  type="text" id="dvapat" name="qty" placeholder="Suma...">
+
+            <label for="20">20x</label>
+            <input onkeyup="Calculate()"  type="text" id="dvanula" name="qty" placeholder="Suma...">
+
+            <label for="5">5x</label>
+            <input onkeyup="Calculate()"  type="text" id="pat" name="qty" placeholder="Suma...">
+            <p id="total"></p>
+            <input type="button" class="button" onclick="Calculate()" value="calculate">
+        </form>
+        
+    </section>
+
+    <script src="./js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=100%, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/menu.css">
+  <link rel="stylesheet" href="./font/fontawesome-webfont.eot">
+  <link rel="stylesheet" href="./css/all.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <title>Filip Petruf</title>
+</head>
+
+<body>
+  <header>
+    <div class="bckground"></div>
+    
+    <section class="banner">
+        <div class="container-oblak">
+            <div id="scene">
+                <div class="layer" data-depth-y="0.4" data-depth-x="0.05"><img class="moon" src="./img/bckground/oblaky/moon.png" alt="" width="50" height="50"></div>
+                <div class="layer" data-depth-x="0.12" data-depth-y="0.1"><img class="obl3" src="./img/bckground/oblaky/3.png" alt=""></div>
+                <div class="layer" data-depth-x="0.25" data-depth-y="0.14"><img class="obl2" src="./img/bckground/oblaky/2.png" alt=""></div>
+                <div class="layer" data-depth-x="0.4" ><img class="obl1" src="./img/bckground/oblaky/1.png" alt=""></div>
+            </div>
+        </div>
+    </section>
+
+
+  <div class="menu-wrap">
+    <input type="checkbox" class="toggler">
+    <div class="hamburger"><div></div></div>
+    <div class="menu">
+      <div>
+        <div>
+          <ul>
+            <li><a href="#domov">Úvod</a></li>
+            <li><a href="#omne">O mne</a></li>
+            <li><a href="#portfolio">Portfólio</a></li>
+            <li><a href="#kontakt">Kontakt</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+    <section>
+    <div  id="domov" class="wrap-1page">
+       <div   class="container-1page">
+          <div class="text-1page">
+           <h2 >Vitajte v mojom Portfóliu</h2>
+           <p  >Volám sa Filip Petruf. Dizajnér/ Frontend Developer
+            žijúci v Bratislave, SK.</p>
+          </div>
+          <div class="scroll_down">
+              <span class="scroll_bar"></span>
+          </div>
+       </div>
+    </div>
+  </section>
+
+  <section id="omne" >
+    <div class="about-wraper">
+      <div data-aos="zoom-in-down"
+      data-aos-duration="3000" data-aos-delay="500"   class="container-about">
+        <div class="text-about">
+        <img data-aos="fade-right"
+        data-aos-duration="1000" data-aos-delay="500"  src="./img/ja.jpg" alt="">
+        <p data-aos="fade-left"
+        data-aos-duration="1000" data-aos-delay="300"  >Vitajte v mojom portfóliu. Volám sa Filip Petruf a pochádzam z malého mesta Zvolen na strednom Slovensku.
+      Programovaniu sa venujem niečo cez rok po tom ako mi bol odporučený kurz cez Learn2code kde som si spravil kurzy Webrebel1:HTML,CSS a Javascript.
+    Ďaľej aj Webrebel2: PHP a Laravel a samozrejme aj Wordpress. No tým to nekončí a snažím sa uciť každý deň niečo nové.
+  Dúfam sa Vám bude moja práca páčiť, ak áno kľudne ma kontaktujte na mail alebo telefónne číslo.</p>
+      </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="portfolio">
+    <div class="portfolio-wrap">
+     <div class="portfolio-container">
+       <div data-aos="zoom-in-up"
+       data-aos-duration="3000"
+       data-aos-offset="300" class="box 1">
+         <img src="./img/bckground/slider/spicy.png" alt="">
+         <button><a href="./odkaz/Rise/index.html">Navštíviť</a></button>
+       </div>
+       <div data-aos="zoom-in-right"
+       data-aos-duration="3000"
+       data-aos-offset="300" class="box 2">
+         <img src="./img/bckground/slider/solid.png" alt="">
+         <button><a href="./odkaz/Solidne byvanie/index.html">Navštíviť</a></button>
+       </div>
+       <div data-aos="zoom-in-down"
+       data-aos-duration="3000"
+       data-aos-offset="300" class="box 3">
+         <img src="./img/bckground/slider/donut.png" alt="">
+         <button><a href="./odkaz/Donut Heaven/index.html">Navštíviť</a></button>
+       </div>
+       <div data-aos="zoom-in-left"
+       data-aos-duration="3000"
+       data-aos-offset="300" class="box 4">
+         <img src="./img/bckground/slider/liline.png"  alt="">
+         <button><a href="./odkaz/Li line/index.html">Navštíviť</a></button>
+       </div>
+     </div>
+    </div>
+  </section>
+
+  <section id="kontakt">
+    <div class="kontakt-wrap">
+      <div data-aos="zoom-in"
+      data-aos-duration="3000"
+       data-aos-offset="300" 
+       class="kontakt-container">
+        <div class="contact">
+         <p><i class="far fa-envelope"></i><a href="mailto:filip.petruf@gmail.com">filip.petruf@gmail.com</a></p>
+         <p><i class="fa fa-phone"></i><a href="tel:+421904555750">+421 904 555 750</a></p>
+       </div>
+       <div class="social">
+         <a href="https://www.linkedin.com/in/filip-petruf-3859638a/"><i class="fab fa-linkedin-in"></i></a>
+         <a href="https://www.instagram.com/petrufportraits/"><i class="fab fa-instagram"></i></a>
+       </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="./js/app.js"></script>
+<script>
+    var scene = document.getElementById('scene');
+    var parallaxInstance = new Parallax(scene);
+</script>
+<script>
+  AOS.init();
+</script>
+</body>
+</html>
