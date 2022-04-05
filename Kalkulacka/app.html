@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="" href="https://fonts.googleapis.com">
+<link rel="" href="https://fonts.gstatic.com" >
+<link rel="" href="https://fonts.googleapis.com">
+<link rel="" href="https://fonts.gstatic.com" >
+<link rel="" href="https://fonts.googleapis.com">
+<link rel="" href="https://fonts.gstatic.com" >
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,400;1,200&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/bootstrap/3/css/bootstrap.css" />
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.css" />
+<link rel="stylesheet" href="./CSS/style.css">
+
+    <title>Kalkulacka</title>
+</head>
+<body>
+<div class="image"></div>   
+    <div id="app">
+        
+
+      <div class="forma">
+          <H1>Kalkulačka poistného</H1>
+          <div class="label variant">
+              <h3>Variant poistenia:</h3>
+                <label for="kratkodobe">krátkodobé <input type="checkbox" onclick="prepnut()" name="kratkodobe" id="kratkodobe" ></label>
+                <label for="dlhodobe">dlhodobé  <input type="checkbox" name="dlhodobe" onclick="prepnut()" onclick="dlhodobe()" id="dlhodobe" ></label>
+          </div>
+
+          <div class="label datum" id="datum">
+              <h3>Dátum:</h3>
+              <label for="start"> <input id="start"  type="date" required> Začiatok</label>
+              <label for="end"> <input  id="end" onmouseout="Dni()" type="date" required> Koniec</label>
+          </div>
+
+          <div class="label balik">
+              <h3>Balík:</h3>
+              <select name="balik" id="balik" >
+                  <option>Select</option> 
+                  <option   value="1.2">Základný&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;1.2€</option>
+                  <option   value="1.8">rozšírený&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;1.8€</option>
+                  <option  value="2.4">Extra&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&emsp;&nbsp;&nbsp;2.4€</option>
+                  <option   value="39">Základný&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;39€</option>
+                  <option   value="49">rozšírený&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;49€</option>
+                  <option  value="59">Extra&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&emsp;&nbsp;&nbsp;59€</option>
+              </select>
+          </div>
+
+          <div class="label pripoistenie">
+              <h3>Pripoistenie:</h3>
+              <select name=""   required id="pripoistenie">
+                  <option>Select</option>
+                  <option value="50">Storno&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;50%</option>
+                  <option  value="30">Aktivity&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;30%</option>
+                  <option value="20">Storno&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;20%</option>
+                  <option  value="10">Aktivity&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;10%</option>
+              </select>
+          </div>
+
+          <div class="label osoba">
+              <h3>Počet osôb:</h3>
+              <select name="osoby" id="osoby">
+                  <option>Select</option>
+                  <option value="1">1</option>
+                  <option  value="2">2</option>
+                  <option  value="3">3</option>
+              </select>
+          </div>
+
+          <div class="label spolu">
+              <button   type="submit" id="btn" class="btn">Vypočítať</button>
+              <p  class="vypocet" id="vypocet"></p>
+          </div>
+      </div>
+    </div>
+
+<script type="text/javascript" src="//cdn.jsdelivr.net/jquery/1/jquery.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.js"></script>
+    
+<script src="./JS/app.js"></script>
+</body>
+</html>

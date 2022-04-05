@@ -1,0 +1,210 @@
+body, html {
+  height: 100%;
+  font-family: 'Raleway', sans-serif;
+}
+
+.image {
+  background-image: url(../img/wp2601482.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+  height: 100%;
+  position: relative;
+  top: -12px;
+}
+
+.forma {
+  background-color: #FFFDD0 !important;
+  background-color: #fffdd033 !important;
+  color: #22462b !important !important;
+  font-weight: bold !important;
+  border-radius: 2px !important;
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  -webkit-transform: translate(-50%, -50%) !important;
+          transform: translate(-50%, -50%) !important;
+  z-index: 2 !important;
+  width: 30% !important;
+  padding: 20px !important;
+  text-align: center !important;
+  -webkit-box-shadow: #000000 8px 15px 55px -5px !important;
+          box-shadow: #000000 8px 15px 55px -5px !important;
+}
+
+.forma h1 {
+  font-size: 3em !important;
+}
+
+.td.active {
+  background-color: #025b02 !important;
+}
+
+option {
+  display: block;
+}
+
+.label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #22462b !important;
+  margin-top: 2em;
+  border-bottom: 1px solid #025b02 !important;
+  line-height: 7px;
+  font-size: 1.2rem !important;
+}
+
+.label select {
+  background-color: #fffdd049 !important;
+  color: #22462b !important !important;
+  width: 15em !important;
+}
+
+.label select:hover {
+  background-color: rgba(0, 128, 0, 0.285) !important;
+  border: #025b02 1px solid !important;
+}
+
+p {
+  display: block;
+}
+
+.datum {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: .8s ease-out;
+  transition: .8s ease-out;
+}
+
+.datum label {
+  font-size: 1.2rem !important;
+}
+
+.datum input {
+  background-color: #fafafa5c !important;
+  border: #025b02 1px solid !important;
+  height: 2.7em;
+  margin-top: 18px;
+  margin-left: 5px;
+  font-size: 1.2rem;
+  color: #22462b !important;
+  -webkit-transition: .2s ease-in !important;
+  transition: .2s ease-in !important;
+}
+
+.datum input:hover {
+  cursor: pointer !important;
+}
+
+input {
+  cursor: pointer;
+}
+
+.btn {
+  height: 3em;
+  width: 6em;
+  margin-bottom: 2em;
+  font-size: 1.2rem;
+  background-color: #fffdd049;
+  color: #22462b !important;
+  border: none !important;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+.btn:active {
+  -webkit-transform: translateY(0px) !important;
+          transform: translateY(0px) !important;
+  border: none !important;
+}
+
+.btn:hover {
+  background-color: rgba(0, 128, 0, 0.285);
+  border: 1px solid #025b02;
+  border-radius: 7px;
+  color: #FFFDD0 !important;
+  -webkit-box-shadow: 2px 2px 25px 2px #757575;
+          box-shadow: 2px 2px 25px 2px #757575;
+  cursor: pointer;
+  -webkit-transform: translateY(-4px);
+          transform: translateY(-4px);
+}
+
+.storno {
+  padding-right: 15.3em;
+}
+
+.jedna {
+  padding-right: 3em;
+}
+
+.tri {
+  margin-left: 2.2em;
+}
+
+.vypocet {
+  font-size: 2em !important;
+  padding-bottom: 1em;
+  -webkit-animation: normal fadein 1.2s ease-in;
+          animation: normal fadein 1.2s ease-in;
+}
+
+@-webkit-keyframes fadein {
+  0% {
+    opacity: 0;
+    color: #fafafa;
+  }
+  30% {
+    opacity: 30%;
+    color: #bcbbbb;
+  }
+  72% {
+    opacity: 50%;
+    color: #025b02;
+  }
+  80% {
+    opacity: 80%;
+    color: #014801;
+  }
+  100% {
+    opacity: 100%;
+    color: #22462b !important;
+  }
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+    color: #fafafa;
+  }
+  30% {
+    opacity: 30%;
+    color: #bcbbbb;
+  }
+  72% {
+    opacity: 50%;
+    color: #025b02;
+  }
+  80% {
+    opacity: 80%;
+    color: #014801;
+  }
+  100% {
+    opacity: 100%;
+    color: #22462b !important;
+  }
+}
+/*# sourceMappingURL=style.css.map */

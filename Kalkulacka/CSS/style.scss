@@ -1,0 +1,139 @@
+$text: rgb(34, 70, 43) !important;
+
+
+body, html {
+    height: 100%;
+    font-family: 'Raleway', sans-serif; 
+}
+
+ 
+  
+.image {
+    background-image: url(../img/wp2601482.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    height: 100%;
+    position: relative;
+    top: -12px;
+}
+
+.forma {
+  background-color: #FFFDD0 !important; 
+  background-color: #fffdd033 !important; 
+  color: $text !important;
+  font-weight: bold !important;
+  border-radius: 2px !important;
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  z-index: 2 !important;
+  width: 30% !important;
+  padding: 20px !important;
+  text-align: center !important;
+  box-shadow: #000000 8px 15px 55px -5px !important;
+  h1 {
+      font-size: 3em !important;
+  }
+}
+
+.td.active {
+    background-color: rgb(2, 91, 2) !important;
+}
+option {
+    display: block;
+}
+.label {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: $text;
+    margin-top: 2em;
+    border-bottom: 1px solid rgb(2, 91, 2) !important;
+    line-height: 7px;
+    font-size: 1.2rem !important;
+    select {
+        background-color: #fffdd049 !important;
+        color: $text !important;
+        width: 15em !important;
+    }
+    select:hover{
+        background-color: rgba(0, 128, 0, 0.285) !important;
+        border: rgb(2, 91, 2) 1px solid !important;
+    }
+}
+p {
+    display: block;
+}
+.datum {
+    display: flex;
+    transition: .8s ease-out;
+    label {
+         font-size: 1.2rem !important;
+    }
+    input {
+        background-color: #fafafa5c !important;
+        border: rgb(2, 91, 2) 1px solid !important;
+        height: 2.7em;
+        margin-top: 18px ;
+        margin-left: 5px;
+        font-size: 1.2rem;
+        color: $text;
+        transition: .2s ease-in !important;    
+    }
+    input:hover {
+        cursor: pointer !important;
+    }
+}
+input {
+    cursor: pointer;
+}
+
+
+.btn {
+    height: 3em;
+    width: 6em;
+    margin-bottom: 2em;
+    font-size: 1.2rem;
+    background-color: #fffdd049;
+    color: $text;
+    border: none !important;
+    transition: .3s ease-in-out;
+}
+.btn:active {
+    transform: translateY(0px) !important;
+    border: none !important;
+}
+.btn:hover {
+   background-color: rgba(0, 128, 0, 0.285);
+   border: 1px solid rgb(2, 91, 2);
+   border-radius: 7px;
+   color: #FFFDD0 !important;
+   box-shadow: 2px 2px 25px 2px rgb(117, 117, 117);
+   cursor: pointer;
+   transform: translateY(-4px);
+}
+.storno {
+  padding-right: 15.3em;
+}
+.jedna {
+    padding-right: 3em;
+}
+.tri {
+    margin-left: 2.2em;
+}
+.vypocet {
+    font-size: 2em !important;
+    padding-bottom: 1em;
+    animation: normal fadein 1.2s ease-in;
+}
+@keyframes fadein {
+    0% { opacity: 0; color: #fafafa;}
+    30% { opacity: 30%; color: #bcbbbb;}
+    72% { opacity: 50%; color: rgb(2, 91, 2);}
+    80% { opacity: 80%; color: rgb(1, 72, 1);}
+    100% { opacity: 100%; color: $text; }
+}
